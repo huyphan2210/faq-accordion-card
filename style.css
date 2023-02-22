@@ -1,2 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans');
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    max-width: 768px;
+    border-radius: 2rem;
+    box-shadow: 1rem 2rem 2rem #5542a9;
+}
+    img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        transform: translate(-50%, -30%);
+    }
+
+    .image {
+        background-image: url(./images/illustration-woman-online-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: -4rem 50%;
+        filter: drop-shadow(0 3rem 0 #f0f0fc);
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 4rem 0 4rem 4rem;
+        overflow: hidden;
+    }
+
+    .faq {
+        padding: 4rem 4rem 4rem 0;
+        width: 50%;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+        .faq h1 {
+            margin-block-start: 0;
+            color: hsl(238, 29%, 16%);
+        }
+
+        .faq .question .questionContent {
+            position: relative;
+            color: hsl(237, 12%, 33%);
+            margin-block-end: 1rem;
+        }
+            .faq .question:hover .questionContent {
+                cursor: pointer;
+                color: hsl(14, 88%, 65%);
+            }
+
+            .faq .question .questionContent img{
+                position: absolute;
+                left: 100%;
+                transform: translate(-100%, -50%);
+                aspect-ratio: 1 / 1;
+            }
+
+        .faq .question .answer {
+            display: none;
+            margin-block-end: 1rem;
+            color: hsl(240, 6%, 50%);
+        }
+
+footer {
+    position: fixed;
+    bottom: 1vh;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
